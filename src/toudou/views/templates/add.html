@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/navigation.css">
+        <link rel="stylesheet" href="/static/css/add.css">
+        <title>Toudou | add</title>
+    </head>
+    <body>
+        <nav id="navigation">
+            <a href="/">
+                <img src="/static/imgs/Logo_Todo.png" id="logo" alt="">
+            </a>
+        </nav>
+        <main>
+            <div id="plus-button-wrapper">
+                <div id="plus-button-options" class="plus-button-options">
+                    <ul>
+                        <li>
+                            <a href="view">
+                                <img class="nav1" src="/static/svgs/visibility.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add">
+                                <img class="nav2" src="/static/svgs/new.svg" alt="" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="plus-button" class="plus-button"><img id="x-svg" class="x-svg" src="/static/svgs/plus.svg" alt="" srcset=""></div>
+            </div>
+            <div id="content">
+                <div id="titles">
+                    <p id="Main_title">Complete the form bellow to create the card</p>
+                </div>
+                <hr width="100%" color="black" size="5px"/>
+                <div id="preview">
+                    <p id="title">preview</p>
+                    <div class="card">
+                        <p id="name"></p>
+                        <div id="card_content">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th class="right bottom">id</th>
+                                    <th class="right bottom">completed</th>
+                                    <th class="bottom">due</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="right">XXX</td>
+                                    <td class="right">No</td>
+                                    <td id="task_due"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <hr width="100%" color="black" size="5px"/>
+                <form action="/add" method="post">
+                    <p id="title_form">Create a todo card</p>
+                    <label for="input_name">*Task name: </label>
+                    <input type="text" maxlength="30" name="input_name" id="input_name" placeholder="name of the task" required="True">
+                    <label for="input_due">Task due for: </label>
+                    <input type="date" id="input_date" name="input_date" min="{{ datetime.today().strftime('%Y-%m-%d') }}">
+                    <input type="submit" value="submit card" id="submit">
+                    <p id="info">* required fields</p>
+                </form>
+            </div>
+        </main>
+        <script>
+            const taskName_p = document.getElementById('name');
+            const taskName = document.getElementById('input_name');
+            const taskDue = document.getElementById('task_due');
+            const input_due = document.getElementById('input_date');
+            
+            taskName.addEventListener('input', () => {
+              taskName_p.textContent = taskName.value;
+            });
+          
+            input_due.addEventListener('change', () => {
+              taskDue.textContent = input_due.value;
+            });
+          </script>
+        <script src="/static/js/plus_menu.js"></script>
+    </body>
+</html>

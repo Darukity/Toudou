@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/navigation.css">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <title>Toudou | home</title>
+    </head>
+    <body>
+        <nav id="navigation">
+            <a href="/">
+                <img src="/static/imgs/Logo_Todo.png" id="logo" alt="">
+            </a>
+        </nav>
+        <main>
+            <div id="plus-button-wrapper">
+                <div id="plus-button-options" class="plus-button-options">
+                    <ul>
+                        <li>
+                            <a href="view">
+                                <img class="nav1" src="/static/svgs/visibility.svg" alt="view" srcset="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add">
+                                <img class="nav2" src="/static/svgs/new.svg" alt="add" srcset="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="plus-button" class="plus-button"><img id="x-svg" class="x-svg" src="/static/svgs/plus.svg" alt="" srcset=""></div>
+            </div>
+            <div id="content">
+                <div id="titles">
+                    <p id="Main_title">Welcome to the toudou project</p>
+                    <p id="Sub_title">Press the + icon to beggin your toudou journey</p>
+                </div>
+                <hr width="100%" color="black" size="5px"/>
+                <div id="blog">
+                    <div id="in_line_links">
+                        <a href="#Add">1. Add a todo</a> | 
+                        <a href="#Edit">2. Edit a todo</a> | 
+                        <a href="#Delete">3. Delete a todo</a> | 
+                        <a href="#Download">4. Download todos</a>
+                    </div>
+                    <h1 id="Add">1. How to add a todo</h1>
+                    <h3>First go on the <a href="/add"><img src="/static/svgs/new.svg" alt="" srcset=""> add</a> page by clicking on the <img src="/static/svgs/plus.svg" alt="" srcset=""> menu.</h3>
+                    <h3>Scroll dow until you see the create form</h3>
+                    <img src="/static/imgs/add_step1.png" alt="" srcset="">
+                    <h3>Fill up the required fields and click on submit card</h3>
+
+                    <h1 id="Edit">2. How to edit a todo</h1>
+                    <h3>First go on the <a href="/view"><img src="/static/svgs/visibility.svg" alt="" srcset=""> view</a> page by clicking on the <img src="/static/svgs/plus.svg" alt="" srcset=""> menu.</h3>
+                    <h3>Then click on the pencil icon on the card you want to edit,</h3>
+                    <img src="/static/imgs/edit_step1.png" alt="" srcset="">
+                    <h3>Scroll dow until you see the edit form</h3>
+                    <img src="/static/imgs/edit_step2.png" alt="" srcset="">
+                    <h3>Fill up the required fields and click on submit changes</h3>
+                    
+                    <h1 id="Delete">3. How to delete a todo</h1>
+                    <h3>First go on the <a href="/view"><img src="/static/svgs/visibility.svg" alt="" srcset=""> view</a> page by clicking on the <img src="/static/svgs/plus.svg" alt="" srcset=""> menu.</h3>
+                    <h3>Then click on the bin icon on the card you want to delete,</h3>
+                    <img src="/static/imgs/delete_step1.png" alt="" srcset="">
+                    <h3>a confirmation box will appear to confirm if you want to delete this task,</h3>
+                    <img src="/static/imgs/delete_step2.png" alt="" srcset="">
+                    <h3>click ok to delete the task <a href="https://www.merriam-webster.com/dictionary/forever">FOREVER</a></h3>
+                    
+                    <h1 id="Download">4. How to download todos</h1>
+                    <h3>First go on the <a href="/view"><img src="/static/svgs/visibility.svg" alt="" srcset=""> view</a> page by clicking on the <img src="/static/svgs/plus.svg" alt="" srcset=""> menu.</h3>
+                    <h3>Then click on the <img src="/static/svgs/download.svg" alt="" srcset="">download icon,</h3>
+                    <h3>the download will start automatically</h3>
+                </div>
+            </div>
+        </main>
+        <script src="/static/js/plus_menu.js"></script>
+    </body>
+</html>

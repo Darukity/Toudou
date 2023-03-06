@@ -1,0 +1,155 @@
+#content {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#titles {
+    width: 100%;
+    height: fit-content;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 50px;
+    border-style: dashed;
+    padding: 1%;
+    color: black;
+    background-color: white;
+    margin-bottom: 5%;
+    transition: ease-in-out .5s;
+}
+
+#titles:hover {
+    color: white;
+    background-color: black;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: black;
+    padding: 1%;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 50px;
+    background-color: white;
+    transition: ease-in-out .5s;
+}
+
+p {
+    text-align: center;
+}
+
+#content #Main_title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#content #Sub_title {
+    font-size: 25px;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    transition: ease-in-out .5s;
+}
+
+#name {
+    background-color: white;
+    padding: 5%;
+    width: fit-content;
+    border-top: solid 5px;
+    border-left: solid 5px;
+    border-right: solid 5px;
+    border-color: black;
+    border-radius: 20px 20px 0px 0px;
+    transition: ease-in-out .5s;
+}
+
+#card_content {   
+    background-color: white;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 0px 30px 30px 30px;
+    transition: ease-in-out .5s;
+}
+
+table {
+    width: 500px;
+    height: 200px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+
+.right {
+    border-right: solid;
+    border-right-style: dashed;
+    border-right-width: 5px;
+    border-color: black;
+}
+
+.bottom {
+    border-bottom: solid;
+    border-bottom-style: dashed;
+    border-bottom-width: 5px;
+    border-color: black;
+}
+
+#title_form {
+    font-size: 30px;
+    padding-bottom: 3%;
+}
+
+form {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: fit-content;
+    border: solid;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 50px;
+    background-color: white;
+}
+
+form label {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: fit-content;
+}
+
+form input {
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+}
+
+#submit {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
